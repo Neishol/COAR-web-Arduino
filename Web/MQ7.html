@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Sensor MQ7</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "css/material.min.css">
+        <script src = "css/material.min.js"></script>
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+  <body>
+      <style>
+          .demo-layout-transparent {
+            background: url('C:/Users/KanekiDark/Desktop/bien/img/fondosensores3.jpg') center / cover;
+          }
+          .demo-layout-transparent .mdl-layout__header,
+          .demo-layout-transparent .mdl-layout__drawer-button {
+            /* This background is dark, so we set text to white. Use 87% black instead if
+               your background is light. */
+            color: white;
+          }
+          </style>
+
+       <style>
+        p {
+        font-size: 18px;
+          }
+       </style>
+          
+          <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Sensor de gas monoxido de carbono MQ7</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <div class = "mdl-navigation">
+                            <div id="tt4" class="icon material-icons">share</div>
+                            <div class="mdl-tooltip" for="tt4">
+                            <a class = "mdl-navigation" href = "https://www.facebook.com/">Share your content<br>via social media</a>
+                            </div>
+                    </div>
+                  <a class="mdl-navigation__link" href="Proyecto V2.html">Arduino</a>
+                </nav>
+              </div>
+            </header>
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">Menu</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="MQ3.html">MQ3</a>
+                <a class="mdl-navigation__link" href="MQ7.html">MQ7</a>
+                <a class="mdl-navigation__link" href="MQ8.html">MQ8</a>
+                <a class="mdl-navigation__link" href="MQ9.html">MQ9</a>
+                <a class="mdl-navigation__link" href="MQ135.html">MQ135</a>
+                <a class="mdl-navigation__link" href="BMP180.html">BMP180</a>
+              </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <center><img src="img/MQ7.png" alt="Italian Trulli" width="300" height="200" style = "padding-left:25px;"></center>
+                <div class = "mdl-layout__title" style = "padding-left:0px"><center><h2 style="border:2px solid rgb(3, 155, 182);"><b style="color:rgb(3, 155, 182);" >Sensor MQ7</b></h2></center></div>
+                <div class = "page-content" style = "padding-left:33px;"><p style="color:rgb(255, 255, 255);"><strong>Descripción:</strong></p></div>
+            <center>
+                <table class="mdl-data-table mdl-js-data-table">
+                  <thead>
+                    <tr>
+                      <th class="mdl-data-table__cell--non-numeric">INFO</th>
+                      <th class="mdl-data-table__cell--non-numeric">ESPECIFICACIONES TÉCNICAS</th>
+                      <th class="mdl-data-table__cell--non-numeric">TUTORIALES</th>
+                      <th class="mdl-data-table__cell--non-numeric">LINK DATASHEET</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Este es un sensor fácil<br> de usar para detección de<br> Monóxido de Carbono (CO),<br> ideal para detectar concentraciones<br> de CO en el aire.<br> El MQ-7 puede detectar concentraciones<br> en el rango de 20 a 2000ppm.<br><br> El módulo posee una salida<br> analógica que proviene del<br> divisor de voltaje que <br>forma el sensor y una<br> resistencia de carga.<br> También tiene una salida digital<br>  que se calibra con un potenciómetro,<br> esta salida tiene<br> un led indicador. </td>
+                      <td class="mdl-data-table__cell--non-numeric"><b>Voltaje de Operación:</b> 5VDC<br>
+                                                                    <b>Integrado amplificador LM393 con umbral mediante potenciómetro.</b><br>
+                                                                    <b>2 pines de salida</b> (salida analógica y salida de nivel TTL).<br>
+                                                                    <b>Salida de nivel TTL:</b> válida de bajo nivel, se puede conectar directamente al microcontrolador.<br>
+                                                                    <b>Salida analógica:</b> 0 ~ 5 V , el voltaje más alto equivale a una concentración más alta.<br>
+                                                                    <b>Condiciones de trabajo:</b> Temperatura ambiente:-10℃ to 65℃, Humedad:≤95% RH</td>
+                      <td class="mdl-data-table__cell--non-numeric">
+                        <button class="mdl-button mdl-js-button">
+                          <a class="mdl-navigation__link" href="http://www.naylampmechatronics.com/blog/42_Tutorial-sensores-de-gas-MQ2-MQ3-MQ7-y-MQ13.html">Tutorial sensores de gas MQ2, MQ3, MQ7 y MQ135</a>
+                        </button>
+                      </td>
+                      <td class="mdl-data-table__cell--non-numeric">
+                        <button class="mdl-button mdl-js-button">
+                          <a class="mdl-navigation__link" href="https://www.sparkfun.com/datasheets/Sensors/Biometric/MQ-7.pdf">Datasheet</a>
+                        </button>
+                      </td>
+                    </tr> 
+                  </tbody>
+                </table>
+              </center>
+              </main>
+          </div>
+  </body>
+</html>

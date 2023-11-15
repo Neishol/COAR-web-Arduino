@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Proyecto</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "css/material.min.css">
+        <script src = "css/material.min.js"></script>
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+  <body>
+      <style>
+          .demo-layout-transparent {
+            background: url('C:/Users/KanekiDark/Desktop/bien/img/fondosensores3.jpg') center / cover;
+          }
+          .demo-layout-transparent .mdl-layout__header,
+          .demo-layout-transparent .mdl-layout__drawer-button {
+            /* This background is dark, so we set text to white. Use 87% black instead if
+               your background is light. */
+            color: white;
+          }
+          </style>
+
+       <style>
+        p {
+        font-size: 18px;
+          }
+       </style>
+          
+          <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Sensor de calidad de aire MQ135</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <div class = "mdl-navigation">
+                            <div id="tt4" class="icon material-icons">share</div>
+                            <div class="mdl-tooltip" for="tt4">
+                            <a class = "mdl-navigation" href = "https://www.facebook.com/">Share your content<br>via social media</a>
+                            </div>
+                    </div>
+                    <a class="mdl-navigation__link" href="Proyecto V2.html">Arduino</a>
+                </nav>
+              </div>
+            </header>
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">Menu</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="MQ3.html">MQ3</a>
+                <a class="mdl-navigation__link" href="MQ7.html">MQ7</a>
+                <a class="mdl-navigation__link" href="MQ8.html">MQ8</a>
+                <a class="mdl-navigation__link" href="MQ9.html">MQ9</a>
+                <a class="mdl-navigation__link" href="MQ135.html">MQ135</a>
+                <a class="mdl-navigation__link" href="BMP180.html">BMP180</a>
+              </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <center><img src="img/MQ135.png" alt="Italian Trulli" width="300" height="200" style = "padding-left:25px;"></center>
+                <div class = "mdl-layout__title" style = "padding-left:0px"><center><h2 style="border:2px solid rgb(3, 155, 182);"><b style="color:rgb(3, 155, 182);" >Sensor MQ135</b></h2></center></div>
+                <div class = "page-content" style = "padding-left:134px;"><p style="color:rgb(255, 255, 255);"><strong>Descripción:</strong></p></div>
+            <center>
+                <table class="mdl-data-table mdl-js-data-table">
+                  <thead>
+                    <tr>
+                      <th class="mdl-data-table__cell--non-numeric">INFO</th>
+                      <th class="mdl-data-table__cell--non-numeric">ESPECIFICACIONES TÉCNICAS</th>
+                      <th class="mdl-data-table__cell--non-numeric">TUTORIALES</th>
+                      <th class="mdl-data-table__cell--non-numeric">LINK DATASHEET</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+<td class="mdl-data-table__cell--non-numeric">Este sensor de control de<br> calidad de aire es usado<br>  para la detección de contaminación<br>  en el medio ambiente, por lo general<br>  es implementado en circuitos de<br>  control como alarmas en las casas,<br>  sitios donde se desea preveni<br>  altos niveles de contaminación<br>  a nivel aeróbico como industrias<br>  que manejan compuestos químico<br> s que pueden ser nocivos también<br>  para la salud, especialmente<br>  en equipos controladores de calidad<br>  de aire en edificios/oficinas.</td>
+                      <td class="mdl-data-table__cell--non-numeric"><b>Voltaje de Operación:</b> 5VDC<br>
+                                                                    <b>Corriente de operación: </b>150mA<br>
+                                                                    <b>Potencia de consumo:</b> 800mW<br>
+                                                                    <b>Tiempo de precalentemiento:</b> 20 segundos<br>
+                                                                    <b>Resistencia de carga:</b> Potenciómetro (Ajustable)<br>
+                                                                    <b>Detección de partes por millón:</b> 10ppm~1000ppm<br>
+                                                                    <b>Concentración detectable:</b> Amoniaco, sulfuro, benceno, humo<br>
+                                                                    <b>Concentración de oxígeno:</b> 2%~21%<br>
+                                                                    <b>Humedad de operación:</b> 95%RH<br>
+                                                                    <b>Temperatura de operación::</b> -20°C~70°C</td>
+                      <td class="mdl-data-table__cell--non-numeric">
+                        <button class="mdl-button mdl-js-button">
+                          <a class="mdl-navigation__link" href="http://www.naylampmechatronics.com/blog/42_Tutorial-sensores-de-gas-MQ2-MQ3-MQ7-y-MQ13.html">Tutorial sensores de gas MQ2, MQ3, MQ7 y MQ135</a>
+                        </button>
+                      </td>
+                      <td class="mdl-data-table__cell--non-numeric">
+                        <button class="mdl-button mdl-js-button">
+                          <a class="mdl-navigation__link" href="https://www.olimex.com/Products/Components/Sensors/Gas/SNS-MQ135/resources/SNS-MQ135.pdf">Datasheet</a>
+                        </button>
+                      </td>
+                    </tr> 
+                  </tbody>
+                </table>
+              </center>
+              </main>
+          </div>
+  </body>
+</html>

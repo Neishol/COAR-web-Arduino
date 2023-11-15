@@ -1,0 +1,278 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+
+<title>Quiz</title>
+<script type="text/javascript" src="js/Zebra.js"></script>
+
+
+
+
+</head>
+
+<body >
+  <style>
+		.demo-layout-transparent {
+		  background: url('C:/Users/KanekiDark/Desktop/bien/img/image.jpg') center / cover;
+		}
+		.demo-layout-transparent .mdl-layout__header,
+		.demo-layout-transparent .mdl-layout__drawer-button {
+		  /* This background is dark, so we set text to white. Use 87% black instead if
+			 your background is light. */
+		  color: white;
+		}
+		</style>
+	 <style>
+	  p {
+		text-shadow: 0px 0px 0px rgb(0, 0, 0);
+	  }
+	 </style>
+
+	 <style>
+	  p {
+	  font-size: 18px;
+		}
+	 </style>
+
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+		  <header class="mdl-layout__header mdl-layout__header--transparent">
+			<div class="mdl-layout__header-row">
+		  <main class="mdl-layout__content">
+			  <img src="img/logo arduino redondo.png" alt="Italian Trulli" width="80" height="80" style = "padding-left:25px;"></center>
+			  <div class = "mdl-layout__title" style = "padding-left:25px"><h1 style="color:rgb(3, 155, 182);">Quiz</h1></div>
+			  <div class = "page-content" style = "padding-left:25px">
+
+    <form id = "copia" name = "copia">
+        <br>
+        <div id="p1a">
+        <p><h2>1) Que sensor mide alcohol?</h2></p>
+        
+         
+        <span>
+        <input type="radio" name="preg1" v-model="p1" value="MQ3">
+            MQ3
+          <br>
+          <input type="radio" name="preg1" v-model="p1" value="MQ7">
+            MQ7
+          <br>
+          
+          <input type="radio" name="preg1" v-model="p1" value="MQ8">
+            MQ8
+             <br> 
+        
+             <input type="radio" name="preg1" v-model="p1" value="MQ9">
+            MQ9
+             <br> 
+
+             <input type="radio" name="preg1" v-model="p1" value="MQ135">
+            MQ135
+              <br> 
+
+              <input type="radio" name="preg1" v-model="p1" value="BMP180">
+            BMP180
+
+            <p>Su respuesta es: {{p1}}</p><br>
+            
+
+               <br> <br>
+              </div>
+        </span>
+
+        <div id="p2a">
+            <p><h2>2) Que sensor mide la calidad de aire ?</h2></p>
+            
+             
+            <span>
+            <input type="radio" name="preg2" v-model="p2" value="MQ3">
+                MQ3
+              <br>
+              <input type="radio" name="preg2" v-model="p2" value="MQ7">
+                MQ7
+              <br>
+              
+              <input type="radio" name="preg2" v-model="p2" value="MQ8">
+                MQ8
+                 <br> 
+            
+                 <input type="radio" name="preg2" v-model="p2" value="MQ9">
+                MQ9
+                 <br> 
+    
+                 <input type="radio" name="preg2" v-model="p2" value="MQ135">
+                MQ135
+                  <br> 
+    
+                  <input type="radio" name="preg2" v-model="p2" value="BMP180">
+                BMP180
+    
+                <p>Su respuesta es: {{p2}}</p><br>
+                
+              
+                   <br> <br>
+                  </div>
+            </span>
+
+        <div id="p3a">
+        <p><h2>3) Cual es el sensor barometrico</h2></p>
+        
+         
+        <span>
+        <input type="radio" name="preg3" v-model="p3" value="MQ3">
+            MQ3
+          <br>
+          <input type="radio" name="preg3" v-model="p3" value="MQ7">
+            MQ7
+          <br>
+          
+          <input type="radio" name="preg3" v-model="p3" value="MQ8">
+            MQ8
+             <br> 
+        
+             <input type="radio" name="preg3" v-model="p3" value="MQ9">
+            MQ9
+             <br> 
+
+             <input type="radio" name="preg3" v-model="p3" value="MQ135">
+            MQ135
+              <br> 
+
+              <input type="radio" name="preg3" v-model="p3" value="BMP180">
+            BMP180
+
+            <p>Su respuesta es: {{p3}}</p><br>
+            
+            
+               <br> <br>
+              </div>
+        </span>
+
+        <div id="p4a">
+            <p><h2>4) Cual es el sensor de gas flamable ?</h2></p>
+            
+             
+            <span>
+            <input type="radio" name="preg4" v-model="p4" value="MQ3">
+                MQ3
+              <br>
+              <input type="radio" name="preg4" v-model="p4" value="MQ7">
+                MQ7
+              <br>
+              
+              <input type="radio" name="preg4" v-model="p4" value="MQ8">
+                MQ8
+                 <br> 
+            
+                 <input type="radio" name="preg4" v-model="p4" value="MQ9">
+                MQ9
+                 <br> 
+    
+                 <input type="radio" name="preg4" v-model="p4" value="MQ135">
+                MQ135
+                  <br> 
+    
+                  <input type="radio" name="preg4" v-model="p4" value="BMP180">
+                BMP180
+    
+                <p>Su respuesta es: {{p4}}</p><br>
+                
+                
+                   <br> <br>
+                  </div>
+            </span>
+
+            <div id="p5a">
+                <p><h2>5) Que sensor mide el monoxido de carbono ?</h2></p>
+                
+                 
+                <span>
+                <input type="radio" name="preg5" v-model="p5" value="MQ3">
+                    MQ3
+                  <br>
+                  <input type="radio" name="preg5" v-model="p5" value="MQ7">
+                    MQ7
+                  <br>
+                  
+                  <input type="radio" name="preg5" v-model="p5" value="MQ8">
+                    MQ8
+                     <br> 
+                
+                     <input type="radio" name="preg5" v-model="p5" value="MQ9">
+                    MQ9
+                     <br> 
+        
+                     <input type="radio" name="preg5" v-model="p5" value="MQ135">
+                    MQ135
+                      <br> 
+        
+                      <input type="radio" name="preg5" v-model="p5" value="BMP180">
+                    BMP180
+        
+                    <p>Su respuesta es: {{p5}}</p><br>
+                    
+                   
+                       <br> <br>
+                      </div>
+                </span>
+
+        <div id="p6a">
+        <p><h2>6) Que sensor mide hidrogeno ?</h2></p>
+        
+         
+        <span>
+        <input type="radio" name="preg6" v-model="p6" value="MQ3">
+            MQ3
+          <br>
+          <input type="radio" name="preg6" v-model="p6" value="MQ7">
+            MQ7
+          <br>
+          
+          <input type="radio" name="preg6" v-model="p6" value="MQ8">
+            MQ8
+             <br> 
+        
+             <input type="radio" name="preg6" v-model="p6" value="MQ9">
+            MQ9
+             <br> 
+
+             <input type="radio" name="preg6" v-model="p6" value="MQ135">
+            MQ135
+              <br> 
+
+              <input type="radio" name="preg6" v-model="p6" value="BMP180">
+            BMP180
+
+            <p>Su respuesta es: {{p6}}</p><br>
+            
+            
+               <br> <br>
+              </div>
+        </span>
+           
+                   <input type= "button"  value= "comprobar" onClick="comprobar();">
+            
+            <input name="restablecer" class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" type="reset">
+            </span>
+            
+        
+        <p><br>
+        </p>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script type="text/javascript" src="js/Zebra.js"></script>
+
+            </form>
+          </div>
+        </div>
+        </main>
+      </div>
+
+</body>
+</html>

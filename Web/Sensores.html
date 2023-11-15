@@ -1,0 +1,133 @@
+<html>
+   <head>
+      <title>The Material Design Lite Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "css/material.min.css">
+      <script src = "css/material.min.js"></script>
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+   </head>
+   
+   <body>
+       
+        <style>
+                .demo-layout-transparent {
+                  background: url('C:/Users/KanekiDark/Desktop/Javascript/mdl v2/image.jpg') center / cover;
+                }
+                .demo-layout-transparent .mdl-layout__header,
+                .demo-layout-transparent .mdl-layout__drawer-button {
+                  /* This background is dark, so we set text to white. Use 87% black instead if
+                     your background is light. */
+                  color: white;
+                }
+                </style>
+             <style>
+              p {
+                text-shadow: 0px 0px 0px rgb(0, 0, 0);
+              }
+             </style>
+      
+             <style>
+              p {
+              font-size: 18px;
+                }
+             </style>
+                
+                <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+                  <header class="mdl-layout__header mdl-layout__header--transparent">
+                    <div class="mdl-layout__header-row">
+                      <!-- Title -->
+                      <span class="mdl-layout-title">Que son y para que sirven los sensores ?</span>
+                  </header>
+                  <div class="mdl-layout__drawer">
+                    <span class="mdl-layout-title">Arduino</span>
+                    <nav class="mdl-navigation">
+                      <a class="mdl-navigation__link" href="Proyecto V2.html">Pagina principal</a>
+                      <a class="mdl-navigation__link" href="Sensores.html">Sensores</a>
+                      <a class="mdl-navigation__link" href="Quizz.html">Quiz</a>
+                    </nav>
+                  </div>
+                  <main class="mdl-layout__content">
+                      <div class = "mdl-layout__title" style = "padding-left:25px"><h2 style="color:rgb(3, 155, 182);">Sensores Arduino</h2></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">Un sensor es un dispositivo capaz de detectar magnitudes físicas o químicas, llamadas variables de instrumentación, y transformarlas en variables eléctricas.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">     -Las variables de instrumentación pueden ser por ejemplo: temperatura, intensidad lumínica, distancia, aceleración, inclinación, desplazamiento, presión, fuerza, torsión,       humedad, movimiento, pH, etc.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">     -Una magnitud eléctrica puede ser una resistencia eléctrica (como en una RTD), una capacidad eléctrica (como en un sensor de humedad o un sensor capacitivo), una       tensión eléctrica (como en un termopar), una corriente eléctrica (como en un fototransistor), etc.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">Los sensores se pueden clasificar en función de los datos de salida en:</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">     <strong>-Digitales</strong></p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">     <strong>-Analógicos</strong></p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">Dependiendo del tipo de sensor, deberemos conectarlo a una entrada digital o analógica.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">Y dentro de los sensores digitales, estos nos pueden dar una señal digital simple con dos estados como una salida de contacto libre de tensión o una salida en bus digital. En caso que el sensor use comunicación por bus, deberemos usar algunos de los buses que implementa Arduino o usar hardware adicional que nos proporcione un interfaz entre el Arduino y el bus.</strong></p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">     <strong>-Analógicos</strong></p></div>
+                      <div class = "mdl-layout__title" style = "padding-left:25px"><h2 style="color:rgb(3, 155, 182);">Características de  los sensores</h2></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Rango de medida: </strong>dominio en la magnitud medida en el que puede aplicarse el sensor.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Precisión: </strong>es el error de medida máximo esperado.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Offset o desviación de cero: </strong>valor de la variable de salida cuando la variable de entrada es nula. Si el rango de medida no llega a valores nulos de la variable de entrada, habitualmente se establece otro punto de referencia para definir el offset.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Linealidad o correlación lineal.</strong></p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Sensibilidad de un sensor: </strong>suponiendo que es de entrada a salida y la variación de la magnitud de entrada.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Resolución: </strong>mínima variación de la magnitud de entrada que puede detectarse a la salida.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Rapidez de respuesta: </strong>puede ser un tiempo fijo o depender de cuánto varíe la magnitud a medir. Depende de la capacidad del sistema para seguir las variaciones de la magnitud de entrada.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Derivas: </strong>son otras magnitudes, aparte de la medida como magnitud de entrada, que influyen en la variable de salida. Por ejemplo, pueden ser condiciones ambientales, como la humedad, la temperatura u otras como el envejecimiento (oxidación, desgaste, etc.) del sensor.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><strong style ="color:rgb(3, 155, 182);">Repetitividad: </strong>error esperado al repetir varias veces la misma medida.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);"><b style="color:rgb(241, 238, 13);">IMPORTANTE</b> A la hora de elegir un sensor, debemos leer detenidamente las características y elegir uno que sea compatible con nuestro sistema (intensidad y voltaje) y que sea sencillo de usar o nos faciliten una librería sencilla y potente.</p></div>
+                      <div class = "page-content" style = "padding-left:100px;"><p style="color:rgb(255, 255, 255);">A continuacion vamos a dejarles una lista de sensores recomendables para empezar a programar con el Arduino: </p></div>
+                      <div class = "page-content">
+                            <ul class="demo-list-item mdl-list">
+                                    <li class="mdl-list__item">
+                                      <span class="mdl-list__item-primary-content" style = "color:white">
+                                        Sensor de alcohol <strong>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised">
+                                                <a class="mdl-navigation__link" href="MQ3.html">MQ3</a>
+                                            </button>
+                                            </strong>
+                                      </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                      <span class="mdl-list__item-primary-content" style = "color:white">
+                                        Sensor de gas monoxido de carbono <strong>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised">
+                                                <a class="mdl-navigation__link" href="MQ7.html">MQ7</a>
+                                            </button>
+                                            </strong>
+                                      </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                      <span class="mdl-list__item-primary-content" style = "color:white">
+                                         Sensor de hidrógeno <strong>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised">
+                                                <a class="mdl-navigation__link" href="MQ8.html">MQ8</a>
+                                            </button>
+                                            </strong>
+                                      </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-content" style = "color:white">
+                                          Sensor de gas flamable <strong>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised">
+                                                <a class="mdl-navigation__link" href="MQ9.html">MQ9</a>
+                                            </button>
+                                            </strong>
+                                        </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-content" style = "color:white">
+                                          Sensor de calidad de aire <strong>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised">
+                                                <a class="mdl-navigation__link" href="MQ135.html">MQ135</a>
+                                            </button>
+                                            </strong> 
+                                        </span>
+                                    </li>
+                                    <li class="mdl-list__item">
+                                        <span class="mdl-list__item-primary-content" style = "color:white">
+                                          Sensor barométrico <strong>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised">
+                                                <a class="mdl-navigation__link" href="BMP180.html">BMP180</a>
+                                            </button>
+                                            </strong>
+                                        </span>
+                                    </li>
+                                  </ul>
+                      </div>
+                    </main>
+                </div>
+    </body>
+</html>
